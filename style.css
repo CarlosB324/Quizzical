@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: inter, sans-serif;
+    background-color: #F5F7FB;
+    position: relative;
+}
+
+.container {
+    padding-top: 30px;
+}
+
+.start-screen-container {
+    display: flex;
+    padding-top: 150px;
+    flex-direction: column;
+    width: 220px;
+    margin: auto;
+}
+
+.start-screen-title {
+    font-family: Karla;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 36.53px;
+    text-align: center;
+    color: #293264;
+    margin-bottom: 10px;
+}
+
+.start-screen-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #293264;
+}
+
+
+.q-and-a-container {
+    max-width: 500px;
+    margin: 0 auto;
+    border-bottom: 1px solid #DBDEF0;
+}
+
+.question-text {
+    margin-top: 0;
+    font-family: karla;
+    font-size: 16px;
+    line-height: 18.7px;
+    color: #293264;
+    margin-bottom: 12px;
+}
+
+.radio-input {
+    display: none;
+}
+
+.answer-container {
+    display: flex;
+    gap:13px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.answer-text {
+    font-family: Inter;
+    font-size: 10.24px;
+    font-weight: 500;
+    line-height: 12.39px;
+    color: #293264;
+    border: 0.77px solid #4D5B9E;
+    padding: 4px;
+    border-radius: 8px;
+    min-width: 66px;
+    display: flex;
+    justify-content: center;
+}
+
+.answer-text:hover {
+    background-color: #D6DBF5;
+    color: #293264;
+}
+
+.start-btn,
+.check-btn,
+.play-again-btn {
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 120px;
+    font-family: Inter;
+    font-size: 10.24px;
+    font-weight: 600;
+    line-height: 12.39px;
+    cursor: pointer;
+    display: block;
+}
+
+.start-btn {
+    font-size: 16px;
+    font-weight: 500;
+    height: 52px;
+    width: 190px;
+    margin: auto;
+}
+
+.check-btn {
+    margin: 30px auto;
+}
+
+.selected-check-group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.selected-check {
+    position: fixed;
+    opacity: 0;
+    bottom: -60px;
+    background-color: #293264;
+    padding: 15px;
+    color: #E7E4E4;
+    border-radius: 5px;
+    transition: all 600ms ease;
+}
+
+.play-again-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 30px auto;
+}
+
+.play-again-score {
+    font-size: 12.8px;
+    font-weight: 700;
+    line-height: 15.49px;
+    color: #293264;
+}
+
+.picked {
+    background-color: #293264;
+    color: #F5F7FB;
+}
+
+.disable {
+    opacity: 75%;
+}
+
+.correct {
+    background-color: lightgreen;
+    color: #293264;
+    opacity: 100%;
+}
+
+.incorrect {
+    background-color: lightcoral;
+    color: #293264;
+}
